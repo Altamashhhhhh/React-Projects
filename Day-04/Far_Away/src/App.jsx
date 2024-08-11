@@ -13,11 +13,18 @@ const App = () => {
   function handleAddItem(item){
     setItem(prev => [...prev , item])
   }
+
+  function handleDelete(id){
+  let afterDelete = item.filter(item=> item.id !== id)
+  setItem(afterDelete)
+  }
+
+  const [packed , setPacked ] = useState(false)
   return (
     <div>
       <Logo />
       <Form addItem={handleAddItem} />
-      <PackingList initialItem={item} />
+      <PackingList initialItem={item} handleDelete={handleDelete} />
       <Stats />
     </div>
   );
@@ -76,24 +83,31 @@ function Form({addItem}) {
   );
 }
 
-function PackingList({initialItem}) {
+function PackingList({initialItem , handleDelete}) {
   return (
     <div className="list">
       <ul>
         {initialItem.map((item) => (
-          <Item item={item} key={item.id} />
+          <Item item={item} key={item.id} handleDelete={handleDelete} />
         ))}
       </ul>
     </div>
   );
 }
-function Item({ item }) {
+
+function Item({ item , handleDelete  }) {
+  
   return (
     <>
+    
       <span>
+      <input type="checkbox" checked={item.packed} value={packed} />
         {item.quantity} {item.description}
+        <button onClick={()=>{
+        handleDelete(item.id)
+      }}>❌</button>
       </span>
-      <button>❌</button>
+      
     </>
   );
 }
