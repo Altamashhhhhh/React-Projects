@@ -7,7 +7,7 @@ function App() {
   
   return (
     <>
-    <Poll title={"The Nation Speaks"} description={"Should Rapists Be Hanged? "} />
+    <Poll title={"The Nation Speaks "} description={"Should Rapists Be Hanged ? "} />
     </>
   )
 }
