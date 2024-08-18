@@ -1,74 +1,71 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    color: #0066FF;
-}
-
 .container {
-    background: #fff;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-.container h2 {
-    margin-bottom: 10px;
-    color: #444;
-}
-
-.container p {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.buttons {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Progress bars styling */
+  .progress {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}
-
-button {
-    background-color: #0066FF;
-    color: #fff;
+    margin-top: 10px;
+  }
+  
+  .line-container {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  
+  .line {
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056d4;
-}
-
-.line-container {
-    margin: 20px 0;
-    background-color: #ddd;
-    height: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.line {
-    background-color: #4CAF50;
-    height: 100%;
-    transition: width 0.5s;
-}
-
-.progress {
-    margin: 10px 0;
-    font-size: 14px;
-    text-align: center;
-}
+    width: 48%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button.yes {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .buttons button.no {
+    background-color: #f44336; /* Red */
+  }
+  
+  .buttons button.yes:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .buttons button.no:hover {
+    background-color: #e53935; /* Darker red */
+  }

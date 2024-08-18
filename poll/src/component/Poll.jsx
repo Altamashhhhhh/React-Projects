@@ -18,25 +18,22 @@ const Poll = ({ title, description }) => {
   let noPercentage = totalVote ? Math.ceil((no / totalVote) * 100) : 0;
 
   return (
-    <div>
-      <h1>POLL</h1>
-      <div className="container">
-        <h2>{title}</h2>
-        <p><strong>Poll:</strong> {description}</p>
-        <div className="progress">
-          <p>Yes: {yesPercentage}%</p>
-          <p>No: {noPercentage}%</p>
-        </div>
-        <div className="line-container">
-          <div className="line" style={{ width: `${yesPercentage}%`, backgroundColor: "#4CAF50" }}></div>
-        </div>
-        <div className="line-container">
-          <div className="line" style={{ width: `${noPercentage}%`, backgroundColor: "#f44336" }}></div>
-        </div>
-        <div className="buttons">
-          <button onClick={handleYes}>YES</button>
-          <button onClick={handleNo}>NO</button>
-        </div>
+    <div className="container">
+      <h2>{title}</h2>
+      <p><strong>Poll:</strong> {description}</p>
+      <div className="progress">
+        <p>Yes: {yesPercentage}%</p>
+        <p>No: {noPercentage}%</p>
+      </div>
+      <div className="line-container">
+        <div className="line" style={{ width: `${yesPercentage}%`, backgroundColor: "#4CAF50" }}></div>
+      </div>
+      <div className="line-container">
+        <div className="line" style={{ width: `${noPercentage}%`, backgroundColor: "#f44336" }}></div>
+      </div>
+      <div className="buttons">
+        <button className="yes" onClick={handleYes}>YES</button>
+        <button className="no" onClick={handleNo}>NO</button>
       </div>
     </div>
   );
