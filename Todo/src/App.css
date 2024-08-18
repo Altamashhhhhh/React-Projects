@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+h1{
+  /* margin: 50px  auto; */
+  color: royalblue;
+  text-align: center;
+}
+
 .App {
   background-color: white;
   padding: 20px;
