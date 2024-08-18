@@ -22,8 +22,8 @@ const Poll = ({ title, description }) => {
       <h2>{title}</h2>
       <p><strong>Poll:</strong> {description}</p>
       <div className="progress">
-        <p>Yes: {yesPercentage}%</p>
-        <p>No: {noPercentage}%</p>
+        <p>{yes} People Agree</p>
+        <p>{no} People Disagree</p>
       </div>
       <div className="line-container">
         <div className="line" style={{ width: `${yesPercentage}%`, backgroundColor: "#4CAF50" }}></div>
