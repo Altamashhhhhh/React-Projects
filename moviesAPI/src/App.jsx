@@ -42,7 +42,7 @@ const App = () => {
           <input
             type="text"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => {fetchMovies(e.target.value)  ; setTitle(e.target.value)}}
             placeholder="Search Movie Name"
             className="search-input"
           />
