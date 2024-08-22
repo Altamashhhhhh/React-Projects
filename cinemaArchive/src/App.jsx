@@ -71,7 +71,7 @@ const App = () => {
                       <p>Rated: {movieDetails.Rated}</p>
                     </>
                   ) : (
-                    <div  onMouseOver={() => handleClick(movie.imdbID)}>
+                    <div onClick={()=>handleClick(movie.imdbID)}  onMouseOver={() => handleClick(movie.imdbID)}>
                       <img
                         src={movie.Poster}
                         alt={`${movie.Title} Poster`}
