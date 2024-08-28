@@ -74,7 +74,7 @@ const App = () => {
 
   return (
     <>
-    <h1>DYNAMIC USER SEARC</h1>
+    <h1>DYNAMIC USER SEARCH</h1>
       <input
         onChange={(e) => setSearch(e.target.value)}
         type="search"
