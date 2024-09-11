@@ -1,0 +1,62 @@
+body {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgb(173, 122, 255);
+}
+.container { 
+  padding: 30px;
+  width: 30%;
+  margin: 50px auto;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow:
+    rgba(185, 170, 204, 0.25) 0px 54px 55px,
+    rgba(164, 156, 174, 0.27) 0px -12px 30px,
+    rgba(15, 15, 16, 0.327) 0px 4px 6px,
+    rgba(172, 163, 185, 0.377) 0px 12px 13px,
+    rgba(255, 255, 255, 0.42) 0px -3px 5px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.otp-input {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+input {
+  width: 12%;
+  padding: 20px;
+  display: flex;
+  font-size: 1em;
+  border: 2px solid   rgb(173, 122, 255);;
+}
+input::placeholder {
+  text-align: center;
+  font-size: 1em;
+  align-self: center;
+  border: none;
+}
+input:focus{
+    background-color: rgba(190, 159, 240, 0.4);
+    color: black;
+    outline: 1px solid rgba(117, 83, 172, 0.715);;
+}
+button {
+  display: block;
+  padding: 15px 30px;
+  width: 80%;
+  margin: 50px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(85, 29, 173);
+  color: white;
+  cursor: pointer;
+}
+button:disabled{
+    background-color: rgb(82, 60, 108);
+    cursor: not-allowed;
+}
