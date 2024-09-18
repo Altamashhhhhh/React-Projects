@@ -1,8 +1,23 @@
-# React + Vite
+# 🏗️ useReducer Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates a simple **Counter App** built using **React** with the `useReducer` hook for state management. The design is styled with **Chakra UI** to give it a modern and clean look.
 
-Currently, two official plugins are available:
+## 🌟 Features
+- Increment and Decrement functionality
+- Centralized state management using `useReducer`
+- Styled with Chakra UI for a responsive and aesthetic interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+Check out the live version of the app here: [Live Counter App](https://react-projects-imot.vercel.app/)
+
+## 🖼️ Homepage Preview
+![Home Page](https://github.com/Altamashhhhhh/Altamashhhhhh.github.io/blob/main/counter_useReducer.png?raw=true)
+
+## 🛠️ Tech Stack
+- **React**
+- **useReducer Hook**
+- **Chakra UI**
+
+## 📂 How to Use
+
+ 
