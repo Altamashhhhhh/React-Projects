@@ -1,8 +1,13 @@
-# React + Vite
+# Counter App with Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Counter App**! This is a simple counter application built using **React** and **Redux**. It demonstrates the fundamentals of state management with Redux and utilizes the clean, responsive nature of **Chakra UI** for the user interface.
 
-Currently, two official plugins are available:
+![HOME PAGE](https://github.com/Altamashhhhhh/Altamashhhhhh.github.io/blob/main/counter-redux.png?raw=true)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Increment and Decrement:** Easily increase or decrease the counter value using dedicated buttons.
+- **Redux Integration:** Manage application state effectively through actions, reducers, and a central store, promoting a predictable and modular architecture.
+- **Chakra UI:** Build an appealing and responsive user interface using pre-built components from Chakra UI, reducing development time and ensuring consistent styling.
+
+🌏([Live Demo](https://react-projects-x46d.vercel.app/))
