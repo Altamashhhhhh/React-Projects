@@ -3,7 +3,7 @@ const rollBtn = document.querySelector(".btn--roll");
 const holdBtn = document.querySelector(".btn--hold");
 const dice = document.querySelector(".dice");
 const player0 = document.querySelector(".player--0");
-const player1 = document.querySelector(".player--1");
+let player1 = document.querySelector(".player--1");
 
 let score0 = document.getElementById("score--0");
 let score1 = document.getElementById("score--1");
